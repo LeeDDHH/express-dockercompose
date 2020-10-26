@@ -1,14 +1,19 @@
 {
-  "name": "node.js-docker",
+  "name": "node-web-app",
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node --experimental-modules server.mjs",
+    "dev": "node --experimental-modules server.mjs"
   },
   "author": "DongHeon Lee <niche3600@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.2",
+    "dotenv": "8.2.0"
   }
 }
